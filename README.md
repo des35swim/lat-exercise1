@@ -16,10 +16,10 @@ docker build -t lat-exercise-1 .
 1. Customise the yesterdays_prices.csv with a comma separated list of yesterdays prices
 2. Run command:
 ```
-docker run -v <your path>/yesterdays_prices.csv:/latitude/yesterdays_prices.csv lat-prog-test
+docker run -v <your path>/yesterdays_prices.csv:/latitude/yesterdays_prices.csv lat-exercise-1
 ```
 It returns an array with three elements:
-  [<buyTime>, <sellTime>, <profit>]
+  ```[<buyTime>, <sellTime>, <profit>]```
 
 ### How to test
 The container also contains a suite of unit tests.  If I had more time I wouldn't bundle them in a separate container.
