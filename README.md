@@ -24,5 +24,5 @@ It returns an array with three elements:
 ### How to test
 The container also contains a suite of unit tests.  If I had more time I wouldn't bundle them in a separate container.
 ```
-docker run lat-prog-test /latitude/testit.sh
+docker run lat-exercise-1 /latitude/testit.sh
 ```
