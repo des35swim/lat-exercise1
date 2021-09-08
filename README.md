@@ -16,7 +16,7 @@ docker build -t lat-exercise-1 .
 1. Customise the yesterdays_prices.csv with a comma separated list of yesterdays prices
 2. Run command:
 ```
-docker run -v <your path>/yesterdays_prices.csv:/latitude/yesterdays_prices.csv lat-exercise-1
+docker run -v <fully qualified path>/yesterdays_prices.csv:/latitude/yesterdays_prices.csv lat-exercise-1
 ```
 It returns an array with three elements:
   ```[<buyTime>, <sellTime>, <profit>]```
