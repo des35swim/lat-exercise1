@@ -27,16 +27,18 @@ class Maxprofit(object):
         arr_size = len(stock_prices)
         profit = stock_prices[1] - stock_prices[0]
         min_element = stock_prices[0]
-        min_element_pos = 0
-        max_element_pos = 0
+        min_element_pos = 0     # buy price position
+        max_element_pos = 0     # sell price position
         
         # Loop through starting from 2nd element
         for i in range( 1, arr_size ):
             
+            # IF found larger profit, set new profit and max_element_pos
             if (stock_prices[i] - min_element > profit):
                 profit = stock_prices[i] - min_element
                 max_element_pos = i + 1
-        
+
+            # IF found smaller buy price, set new  min_element and min_element_pos
             if (stock_prices[i] < min_element):
                 min_element = stock_prices[i]
                 min_element_pos = i + 1
