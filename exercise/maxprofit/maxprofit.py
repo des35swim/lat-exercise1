@@ -14,8 +14,7 @@ class Maxprofit(object):
             stock_prices_yesterday[i] = int(stock_prices_yesterday[i])
         #endFor
 
-        maxprof = Maxprofit()
-        value = maxprof.get_max_profit(stock_prices_yesterday)
+        value = self.get_max_profit(stock_prices_yesterday)
         print (value)
     #endDef
 
