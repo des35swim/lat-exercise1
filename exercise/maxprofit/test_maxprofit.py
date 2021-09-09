@@ -40,7 +40,7 @@ class MaxprofitTest(unittest.TestCase):
         value = self.maxprof.get_max_profit(stock_prices_yesterday)
         self.assertEqual(value, ['10:05', '10:03', -1], FAILURE)
 
-    def last_price_lowest(self):
+    def test_last_price_lowest(self):
         stock_prices_yesterday = [22, 20, 25, 26, 15]
         value = self.maxprof.get_max_profit(stock_prices_yesterday)
         self.assertEqual(value, ['10:02', '10:04', 6], FAILURE)
